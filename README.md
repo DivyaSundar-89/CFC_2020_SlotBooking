@@ -7,6 +7,7 @@
 5. Watson discovery to be provisioned with the default pre-enriched data set and create a cloud function for the node js script
    to access the external REST API.
 
+** Sanpshots of the working POC is given in the file "Snapshots of working poc" present in this project
 
 ** Steps to execute the webapp project
 
