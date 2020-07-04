@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Commodity</display-name>
+  <servlet>
+    <servlet-name>stock</servlet-name>
+    <servlet-class>commodity.stock</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>vendor</servlet-name>
+    <servlet-class>commodity.vendor</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>slot</servlet-name>
+    <servlet-class>commodity.slot</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>order</servlet-name>
+    <servlet-class>commodity.order</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>customer</servlet-name>
+    <servlet-class>commodity.customer</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>placeOrder</servlet-name>
+    <servlet-class>commodity.placeOrder</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>stock</servlet-name>
+    <url-pattern>/stock</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>vendor</servlet-name>
+    <url-pattern>/vendor</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>slot</servlet-name>
+    <url-pattern>/slot</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>order</servlet-name>
+    <url-pattern>/order</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>customer</servlet-name>
+    <url-pattern>/customer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>placeOrder</servlet-name>
+    <url-pattern>/placeOrder</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

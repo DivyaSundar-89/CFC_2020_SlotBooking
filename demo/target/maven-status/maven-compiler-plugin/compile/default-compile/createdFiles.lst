@@ -1,0 +1,5 @@
+com\cfc\cfcrest\VendorSlotDetails.class
+com\cfc\cfcrest\JdbcCustomerDAO.class
+com\cfc\cfcrest\Vendor.class
+com\cfc\cfcrest\MainController.class
+com\cfc\cfcrest\DemoApplication.class
