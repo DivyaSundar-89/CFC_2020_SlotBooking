@@ -30,7 +30,7 @@ before launching the dashboard and order details view.
 4. Create a cloud function and action with runtime as Node 10. Use the script as action code - discovery-covid-async.js in this project which makes the external REST call to fetch the vendor slot id.
 5. Enable the cloud function as a web action and make the public URL as a webhook.
 6. Customize the dialog "GetSlotBooked" (under CDC-COVID-FAQ) and enable the webhook. The parameter name "cust_name" is not dynamic from the chat-bot, so add the customer_name as a parameter in the dialog customization, example: cust_name key has value Alex (which will be passed as Path parameter to the external REST call).
-7. Enable firewall to allow destination to localhost to access the localhost REST api for fetching the vendor slot id (Note: Its not a public URL for now). Or access it via deploying in a vm or through private network.
+7. IBM cloudant database is used which stores the details of the record for vendor id, customer id and the slot booked with the vendor. The cloudant database is accessed by the node10 runtime cloud function which gives the response to the watson assistant chat-bot.
 
 ** Testing the chat-bot
 
