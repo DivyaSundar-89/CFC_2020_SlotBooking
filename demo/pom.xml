@@ -57,7 +57,11 @@
 			<artifactId>spring-jdbc</artifactId>
 			<version>3.0.3.RELEASE</version>
 		</dependency>
-
+		<dependency>
+			<groupId>com.cloudant</groupId>
+			<artifactId>cloudant-spring-boot-starter</artifactId>
+			<version>0.0.3</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>

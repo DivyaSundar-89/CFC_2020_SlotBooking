@@ -11,6 +11,9 @@ public class MainController {
 	@RequestMapping(method = RequestMethod.GET, value = "/getslotdetail/{customerId}")
 	@ResponseBody
 	public Vendor getAllStudents(@PathVariable("customerId") String customerId) {
+		
 		return VendorSlotDetails.getInstance().getSlot(customerId);
 	}
+	
+	
 }

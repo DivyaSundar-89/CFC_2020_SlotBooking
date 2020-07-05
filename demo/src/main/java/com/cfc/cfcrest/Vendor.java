@@ -12,6 +12,15 @@ public class Vendor {
 	String slot;
 	String vendor_id;
 	String cust_id;
+	String _id;
+
+	public String get_id() {
+		return _id;
+	}
+
+	public void set_id(String _id) {
+		this._id = _id;
+	}
 
 	public String getVendor_id() {
 		return vendor_id;
