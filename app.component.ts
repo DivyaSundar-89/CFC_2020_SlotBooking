@@ -12,12 +12,9 @@ import { retry, catchError } from 'rxjs/operators';
 export class AppComponent  {
   address: String
 category: String
-donornotes: String
-email: String
 name: String
 phone: String
 recommend: String
-time: String
 alert:boolean = false
   constructor(private http: HttpClient) {}
   
@@ -25,15 +22,12 @@ alert:boolean = false
   onSubmit(form: NgForm) {
     var formData: any = new FormData();
     formData.append("name", form.value.name);
-    formData.append("email", form.value.email);
-    formData.append("donornotes", form.value.donornotes);
     formData.append("phone", form.value.phone);
     formData.append("recommend", form.value.recommend);
-    formData.append("time", form.value.time);
     formData.append("address", form.value.address);
     formData.append("category", form.value.category);
    
-      let url = "http://localhost:8083/storeDonorDetail"
+      let url = "http://localhost:8083/storeRecipientDetail"
       this.http.post(url, formData).subscribe(
         (response) => console.log("response" , response)       
       )
