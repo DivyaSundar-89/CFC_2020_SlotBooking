@@ -36,9 +36,12 @@ public class DemoApplication {
 		ApplicationContext context = new ClassPathXmlApplicationContext("Spring-Module.xml");
 
 		JdbcCustomerDAO customerDAO = (JdbcCustomerDAO) context.getBean("customerDAO");
-		List<Vendor> vendorList = customerDAO.getAllVendors();
-
 		client.deleteDB("cus");
+		client.deleteDB("donor");
+		client.deleteDB("recipient");
+		client.deleteDB("mapping");
+
+		List<Vendor> vendorList = customerDAO.getAllVendors();
 		for (Vendor vendor : vendorList) {
 			client.database("cus", true).post(vendor);
 		}

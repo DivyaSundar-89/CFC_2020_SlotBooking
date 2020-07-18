@@ -1,5 +1,12 @@
 com\cfc\cfcrest\VendorSlotDetails.class
 com\cfc\cfcrest\JdbcCustomerDAO.class
-com\cfc\cfcrest\Vendor.class
+com\cfc\cfcrest\RecipientPOJO.class
+distancemapper\GetNearbyDistance.class
 com\cfc\cfcrest\MainController.class
+distancemapper\ComputeShortDistance$1.class
+com\cfc\cfcrest\DonorPOJO.class
+com\cfc\cfcrest\Vendor.class
+distancemapper\Location.class
+com\cfc\cfcrest\MappingCategoryPOJO.class
 com\cfc\cfcrest\DemoApplication.class
+distancemapper\ComputeShortDistance.class
