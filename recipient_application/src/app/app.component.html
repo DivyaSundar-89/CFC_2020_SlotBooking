@@ -1,0 +1,54 @@
+<h1>Receiver registration</h1>
+<div *ngIf="alert" class="alert alert-success" role="alert">
+  <strong>Registration is successful </strong>
+  <button type="button" (click) = "closeAlert()" class="close" data-dismiss="alert" aria-label="Close">
+     <span aria-hidden="true">&times;</span> 
+  </button>
+</div>
+<form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)">
+  
+  <div class="column">
+    <label for="your_name">Name</label>
+    <input type="text" id="your_name" name="name" ngModel/>
+ 
+    <label for="your_phone">Phone Number</label>
+    <input type="tel" id="your_phone" name="phone" ngModel/>
+    
+    <label for="address">Address</label>
+    <textarea id="address" name="address"  ngModel></textarea>
+    
+</div>
+   
+  <div class="column">
+    <label for="categorytype">Category</label>
+    <select id="categorytype" name="category" ngModel>
+    <option value="grocery" ngModel>Grocery</option>
+    <option value="clothes" ngModel>Clothes</option>
+    <option value="food" ngModel>Food</option>
+    <option value="donate" ngModel>Amount</option>
+    </select>
+   
+
+  <fieldset>
+  <legend>Recommend to friends/others</legend>
+  <label>
+  <input type="radio" name="recommend" value="Yes" ngModel/>
+    Yes     
+  </label>
+  <label>
+ <input type="radio" name="recommend"  value="No" ngModel/>
+    No      
+ </label>
+  
+</fieldset>
+ 
+
+   <br/>
+   <br/>
+       
+    <input type="submit" value = "Register"/>
+    <input type="reset" value="Cancel" />
+    
+  </div>
+  
+</form>
