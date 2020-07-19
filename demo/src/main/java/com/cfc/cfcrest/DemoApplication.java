@@ -37,9 +37,6 @@ public class DemoApplication {
 
 		JdbcCustomerDAO customerDAO = (JdbcCustomerDAO) context.getBean("customerDAO");
 		client.deleteDB("cus");
-		client.deleteDB("donor");
-		client.deleteDB("recipient");
-		client.deleteDB("mapping");
 
 		List<Vendor> vendorList = customerDAO.getAllVendors();
 		for (Vendor vendor : vendorList) {
