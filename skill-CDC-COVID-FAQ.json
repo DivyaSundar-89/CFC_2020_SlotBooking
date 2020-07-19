@@ -4,19 +4,19 @@
       "intent": "ExposedEmployees",
       "examples": [
         {
-          "text": "My spouse had covid. Can I go back to work anyway?"
-        },
-        {
-          "text": "should my employees stay home from work if they are exposed to covid?"
+          "text": "should i stay home from work if I've been in contact with a covid patient?"
         },
         {
           "text": "can i return to work even though my housemate has covid?"
         },
         {
-          "text": "should i stay home from work if I've been in contact with a covid patient?"
+          "text": "how long should I stay home from work after being near someone with covid?"
         },
         {
-          "text": "how long should I stay home from work after being near someone with covid?"
+          "text": "My spouse had covid. Can I go back to work anyway?"
+        },
+        {
+          "text": "should my employees stay home from work if they are exposed to covid?"
         }
       ],
       "description": "Ask about employee safety after an exposure"
@@ -25,13 +25,10 @@
       "intent": "DataSource",
       "examples": [
         {
-          "text": "Are you sure?"
+          "text": "Where did you learn this?"
         },
         {
           "text": "Is this true?"
-        },
-        {
-          "text": "Where did you learn this?"
         },
         {
           "text": "Is this information accurate?"
@@ -41,6 +38,9 @@
         },
         {
           "text": "Where do you get your information?"
+        },
+        {
+          "text": "Are you sure?"
         }
       ],
       "description": "Information on where this bot sourced it's data"
@@ -49,13 +49,13 @@
       "intent": "WorkplaceFaceCoverings",
       "examples": [
         {
+          "text": "do I need a special mask for work?"
+        },
+        {
           "text": "are face coverings required at work?"
         },
         {
           "text": "should customers in my workplace have on masks?"
-        },
-        {
-          "text": "do I need a special mask for work?"
         },
         {
           "text": "Do we need to provide masks for employees?"
@@ -70,7 +70,7 @@
       "intent": "News_Corona_Virus",
       "examples": [
         {
-          "text": "NEWS"
+          "text": "What is in the NEWS?"
         },
         {
           "text": "Whats happening?"
@@ -79,7 +79,7 @@
           "text": "whats happening"
         },
         {
-          "text": "What is in the NEWS?"
+          "text": "NEWS"
         }
       ],
       "description": ""
@@ -88,16 +88,16 @@
       "intent": "NegativeTestResults",
       "examples": [
         {
-          "text": "if you test negative can you still get COVID-19 later?"
+          "text": "Does a negative test mean a person does not have COVID-19?"
         },
         {
           "text": "Can you have corona virus and still test negative?"
         },
         {
-          "text": "Negative test results"
+          "text": "if you test negative can you still get COVID-19 later?"
         },
         {
-          "text": "Does a negative test mean a person does not have COVID-19?"
+          "text": "Negative test results"
         },
         {
           "text": "Can a person test negative and later test positive for COVID-19?"
@@ -109,19 +109,19 @@
       "intent": "RiskToPets",
       "examples": [
         {
-          "text": "Risk to pets"
-        },
-        {
           "text": "Should I be concerned about pets or other animals and COVID-19?"
         },
         {
-          "text": "Are my pets in risk?"
+          "text": "Risk to pets"
+        },
+        {
+          "text": "Is there any danger to pets?"
         },
         {
           "text": "Can corona virus affect the pets?"
         },
         {
-          "text": "Is there any danger to pets?"
+          "text": "Are my pets in risk?"
         }
       ],
       "description": "Guidance on potential risk to Pets"
@@ -130,16 +130,16 @@
       "intent": "Schoolfromhome",
       "examples": [
         {
-          "text": "I need tips for at home learning"
-        },
-        {
-          "text": "how do I keep my child engaged in schoolwork?"
+          "text": "Tips for my child's schedule when school is canceled."
         },
         {
           "text": "School from home"
         },
         {
-          "text": "Tips for my child's schedule when school is canceled."
+          "text": "how do I keep my child engaged in schoolwork?"
+        },
+        {
+          "text": "I need tips for at home learning"
         },
         {
           "text": "While school’s out, how can I help my child continue learning?"
@@ -151,25 +151,25 @@
       "intent": "AnimalContact",
       "examples": [
         {
-          "text": "Should I avoid contact with pets or other animals if I am sick with COVID-19?"
+          "text": "can I get this from my dog?"
         },
         {
           "text": "do dogs and cats get sick from corona virus?"
+        },
+        {
+          "text": "can I get this from my cat?"
+        },
+        {
+          "text": "can I get covid-19 from my pet?"
+        },
+        {
+          "text": "Should I avoid contact with pets or other animals if I am sick with COVID-19?"
         },
         {
           "text": "Animal contact"
         },
         {
           "text": "can my dog catch corona virus?"
-        },
-        {
-          "text": "can I get covid-19 from my pet?"
-        },
-        {
-          "text": "can I get this from my dog?"
-        },
-        {
-          "text": "can I get this from my cat?"
         }
       ],
       "description": "Human - Animal interaction guidance"
@@ -178,19 +178,19 @@
       "intent": "AdditionalWorkplaceHygiene",
       "examples": [
         {
-          "text": "what can I do to decrease the spread of disease in my workplace?"
+          "text": "any additional tips to decrease spread?"
         },
         {
           "text": "do I need to provide PPE to customers?"
+        },
+        {
+          "text": "what can I do to decrease the spread of disease in my workplace?"
         },
         {
           "text": "How do I revise my workspace to reduce transmission risks?"
         },
         {
           "text": "what can I do at the office to decrease spread?"
-        },
-        {
-          "text": "any additional tips to decrease spread?"
         }
       ],
       "description": "Answer what to do and provide to decrease spread."
@@ -198,15 +198,6 @@
     {
       "intent": "CommunitySpread",
       "examples": [
-        {
-          "text": "Does  Corona Virus (COVID-19) spread to an entire community?"
-        },
-        {
-          "text": "What does that term community spread mean?"
-        },
-        {
-          "text": "What is community spread?"
-        },
         {
           "text": "Community Spread"
         },
@@ -218,6 +209,15 @@
         },
         {
           "text": "Why is community spread of this virus important?"
+        },
+        {
+          "text": "Does  Corona Virus (COVID-19) spread to an entire community?"
+        },
+        {
+          "text": "What does that term community spread mean?"
+        },
+        {
+          "text": "What is community spread?"
         }
       ],
       "description": "Defining Community Spread"
@@ -232,10 +232,10 @@
           "text": "Can someone who has been quarantined for COVID-19 spread the illness to others?"
         },
         {
-          "text": "spread in quarantine"
+          "text": "does quarantining people stop the spread of corona virus?"
         },
         {
-          "text": "does quarantining people stop the spread of corona virus?"
+          "text": "spread in quarantine"
         },
         {
           "text": "does putting infected people into quarantine help?"
@@ -250,19 +250,19 @@
       "intent": "CriticalBusinesses",
       "examples": [
         {
-          "text": "which businesses are thought of as critical?"
-        },
-        {
-          "text": "Is my workplace a critical business?"
-        },
-        {
-          "text": "How do I know if my business is considered critical?"
+          "text": "How do I find out if my business is considered essential?"
         },
         {
           "text": "Which businesses are deemed critical?"
         },
         {
-          "text": "How do I find out if my business is considered essential?"
+          "text": "How do I know if my business is considered critical?"
+        },
+        {
+          "text": "Is my workplace a critical business?"
+        },
+        {
+          "text": "which businesses are thought of as critical?"
         }
       ],
       "description": "Answer what to do after employee contracts Covid-19."
@@ -292,16 +292,16 @@
       "intent": "DisinfectingTheWorkplace",
       "examples": [
         {
-          "text": "how much extra cleaning should I do?"
+          "text": "what areas do I need to disinfect?"
         },
         {
-          "text": "how do we keep the customer area disinfected?"
+          "text": "how much extra cleaning should I do?"
         },
         {
           "text": "any cleaning recommendations?"
         },
         {
-          "text": "what areas do I need to disinfect?"
+          "text": "how do we keep the customer area disinfected?"
         },
         {
           "text": "How do I clean and disinfect machinery or equipment?"
@@ -313,7 +313,7 @@
       "intent": "goodbyes",
       "examples": [
         {
-          "text": "ok bye"
+          "text": "g'day"
         },
         {
           "text": "see ya soon"
@@ -329,6 +329,24 @@
         },
         {
           "text": "out of time"
+        },
+        {
+          "text": "ok bye"
+        },
+        {
+          "text": "my time is up"
+        },
+        {
+          "text": "logging off"
+        },
+        {
+          "text": "leave"
+        },
+        {
+          "text": "laters"
+        },
+        {
+          "text": "no problem"
         },
         {
           "text": "see ya later"
@@ -517,25 +535,7 @@
           "text": "good night"
         },
         {
-          "text": "g'day"
-        },
-        {
           "text": "i'm leaving"
-        },
-        {
-          "text": "no problem"
-        },
-        {
-          "text": "laters"
-        },
-        {
-          "text": "leave"
-        },
-        {
-          "text": "logging off"
-        },
-        {
-          "text": "my time is up"
         }
       ]
     },
@@ -543,19 +543,19 @@
       "intent": "AttendingFuneral",
       "examples": [
         {
-          "text": "Are funerals safe? "
-        },
-        {
           "text": "Should I avoid funerals?"
         },
         {
-          "text": "Can I go to a funeral? "
+          "text": "Are funerals safe? "
         },
         {
           "text": "Am I at risk if I go to a funeral or visitation service for someone who died of COVID-19?"
         },
         {
           "text": "Can I go to a funeral of someone who died of  Corona Virus (COVID-19)?"
+        },
+        {
+          "text": "Can I go to a funeral? "
         }
       ],
       "description": "Funeral attendance guidance"
@@ -563,9 +563,6 @@
     {
       "intent": "schoolclosing",
       "examples": [
-        {
-          "text": "Will schools be dismissed if there is an outbreak in my community?"
-        },
         {
           "text": "how do I know if my school is closing?"
         },
@@ -577,6 +574,9 @@
         },
         {
           "text": "why are schools closing?"
+        },
+        {
+          "text": "Will schools be dismissed if there is an outbreak in my community?"
         }
       ],
       "description": "School closings information"
@@ -585,19 +585,19 @@
       "intent": "CDC_Response",
       "examples": [
         {
-          "text": "CDC response"
+          "text": "What is CDC doing about COVID-19?"
         },
         {
-          "text": "What is CDC doing about COVID-19?"
+          "text": "CDC response"
         },
         {
           "text": "What is the center for disease control doing to help?"
         },
         {
-          "text": "How is CDC helping Americans prepare?"
+          "text": "Does CDC work to protect public health?"
         },
         {
-          "text": "Does CDC work to protect public health?"
+          "text": "How is CDC helping Americans prepare?"
         }
       ],
       "description": "Info about the CDC"
@@ -606,31 +606,31 @@
       "intent": "Wearingfacemasks",
       "examples": [
         {
-          "text": "Do I need to wear a face mask?"
-        },
-        {
           "text": "Should my child wear a face mask?"
         },
         {
-          "text": "Should I wear a face mask?"
-        },
-        {
-          "text": "Wearing face masks"
-        },
-        {
-          "text": "What do face masks do? "
+          "text": "Do face masks do anything?"
         },
         {
           "text": "Someone in my household is sick should we wear masks at home?"
         },
         {
-          "text": "Should I use a face mask when in public?"
+          "text": "What do face masks do? "
+        },
+        {
+          "text": "Should I wear a face mask?"
+        },
+        {
+          "text": "Do I need to wear a face mask?"
         },
         {
           "text": "Does CDC recommend the use of facemask to prevent COVID-19?"
         },
         {
-          "text": "Do face masks do anything?"
+          "text": "Should I use a face mask when in public?"
+        },
+        {
+          "text": "Wearing face masks"
         }
       ],
       "description": "General facemask questions"
@@ -648,19 +648,19 @@
       "intent": "MealsForStudents",
       "examples": [
         {
-          "text": "While school’s out, will kids have access to meals?"
+          "text": "how are students on school lunch plans getting their meals?"
+        },
+        {
+          "text": "will school students be able to get their free meals?"
         },
         {
           "text": "Meals for students"
         },
         {
-          "text": "how are students on school lunch plans getting their meals?"
+          "text": "While school’s out, will kids have access to meals?"
         },
         {
           "text": "are schools continuing to serve school lunch plans even if classes are closed?"
-        },
-        {
-          "text": "will school students be able to get their free meals?"
         }
       ],
       "description": "Info regarding school and student meals"
@@ -669,7 +669,7 @@
       "intent": "greeting",
       "examples": [
         {
-          "text": "Good morning"
+          "text": "hello"
         },
         {
           "text": "howdy"
@@ -690,9 +690,6 @@
           "text": "hello watson"
         },
         {
-          "text": "hello"
-        },
-        {
           "text": "yo"
         },
         {
@@ -706,6 +703,9 @@
         },
         {
           "text": "feeling a bit low"
+        },
+        {
+          "text": "Good morning"
         },
         {
           "text": "Good afternoon"
@@ -740,16 +740,16 @@
       "intent": "Testing",
       "examples": [
         {
-          "text": "can my doctor test me if I start feeling sick?"
-        },
-        {
-          "text": "Testing"
+          "text": "Should I be tested for COVID-19?"
         },
         {
           "text": "should I head to the doctor if I show symptoms?"
         },
         {
-          "text": "Should I be tested for COVID-19?"
+          "text": "Testing"
+        },
+        {
+          "text": "can my doctor test me if I start feeling sick?"
         },
         {
           "text": "who should get tested?"
@@ -761,22 +761,22 @@
       "intent": "RiskToChildren",
       "examples": [
         {
-          "text": "do children catch covid-19?"
-        },
-        {
-          "text": "Are kids at increased risk of infection?"
-        },
-        {
           "text": "Are children at higher risk of getting sick?"
         },
         {
           "text": "Risk to children"
         },
         {
-          "text": "What is the risk of my child becoming sick with COVID-19?"
+          "text": "Are kids at increased risk of infection?"
         },
         {
           "text": "Can corona virus infect an infant?"
+        },
+        {
+          "text": "What is the risk of my child becoming sick with COVID-19?"
+        },
+        {
+          "text": "do children catch covid-19?"
         }
       ],
       "description": "Guidance on potential risk to Children"
@@ -785,10 +785,10 @@
       "intent": "ProductsFromChina",
       "examples": [
         {
-          "text": "should i stop buying products from China?"
+          "text": "Products from China"
         },
         {
-          "text": "Products from China"
+          "text": "should i stop buying products from China?"
         },
         {
           "text": "Am I at risk for COVID-19 from a package or products shipping from China?"
@@ -809,6 +809,9 @@
           "text": "what products are best at disinfecting?"
         },
         {
+          "text": "What cleaning products should I use to protect against COVID-19?"
+        },
+        {
           "text": "Where do i need to disinfect?"
         },
         {
@@ -822,9 +825,6 @@
         },
         {
           "text": "How do I clean my home to remove virus molecules"
-        },
-        {
-          "text": "What cleaning products should I use to protect against COVID-19?"
         }
       ],
       "description": "Disinfection Guidance"
@@ -833,7 +833,7 @@
       "intent": "HandwashingTips",
       "examples": [
         {
-          "text": "will frequent handwashing help?"
+          "text": "how do i wash my hands correctly?"
         },
         {
           "text": "is hand sanitizer effective against covid-19?"
@@ -845,7 +845,7 @@
           "text": "Should I use soap and water or a hand sanitizer to protect against COVID-19?"
         },
         {
-          "text": "how do i wash my hands correctly?"
+          "text": "will frequent handwashing help?"
         },
         {
           "text": "will washing my hands help protect me?"
@@ -863,7 +863,7 @@
       "intent": "HigherRiskPopulations",
       "examples": [
         {
-          "text": "What does immunocompromised mean? "
+          "text": "Are older adults more likely to contract the disease?"
         },
         {
           "text": "Why do Boomers get sick? "
@@ -878,43 +878,43 @@
           "text": "Are all the old people going to die? "
         },
         {
-          "text": "Are older adults more likely to contract the disease?"
-        },
-        {
           "text": "Does Gen-Y get it?"
         },
         {
-          "text": "Can Gen-X get sick? "
+          "text": "What does immunocompromised mean? "
         },
         {
-          "text": "How does it affect immunocompromised people? "
-        },
-        {
-          "text": "Higher risk populations"
-        },
-        {
-          "text": "Who is at higher risk for serious illness from COVID-19?"
-        },
-        {
-          "text": "Does  Corona Virus (COVID-19) affect older people more?"
-        },
-        {
-          "text": "Can Millennials get it? "
-        },
-        {
-          "text": "Do seniors need to take extra precautions?"
-        },
-        {
-          "text": "How does this impact the elderly? "
-        },
-        {
-          "text": "I am over the age of 60."
+          "text": "I have underlying health issues."
         },
         {
           "text": "I have a chronic illness."
         },
         {
-          "text": "I have underlying health issues."
+          "text": "I am over the age of 60."
+        },
+        {
+          "text": "How does this impact the elderly? "
+        },
+        {
+          "text": "Do seniors need to take extra precautions?"
+        },
+        {
+          "text": "Can Millennials get it? "
+        },
+        {
+          "text": "Does  Corona Virus (COVID-19) affect older people more?"
+        },
+        {
+          "text": "Who is at higher risk for serious illness from COVID-19?"
+        },
+        {
+          "text": "Higher risk populations"
+        },
+        {
+          "text": "How does it affect immunocompromised people? "
+        },
+        {
+          "text": "Can Gen-X get sick? "
         }
       ],
       "description": "Identify which populations are at higher risk"
@@ -923,7 +923,10 @@
       "intent": "spreadviafood",
       "examples": [
         {
-          "text": "spread via food"
+          "text": "do I need to wash my groceries?"
+        },
+        {
+          "text": "Can the virus that causes COVID-19 be spread through food, including refrigerated or frozen food?"
         },
         {
           "text": "does the virus stick to packaged food?"
@@ -932,10 +935,7 @@
           "text": "does it spread on food packaging?"
         },
         {
-          "text": "Can the virus that causes COVID-19 be spread through food, including refrigerated or frozen food?"
-        },
-        {
-          "text": "do I need to wash my groceries?"
+          "text": "spread via food"
         }
       ],
       "description": "Virus spread from food or food packaging"
@@ -944,13 +944,13 @@
       "intent": "GetSlotBooked",
       "examples": [
         {
+          "text": "Get the slot booked by my vendor"
+        },
+        {
           "text": "What is the slot booked with vendor ?"
         },
         {
           "text": "What is my slot booked with vendor"
-        },
-        {
-          "text": "Get the slot booked by my vendor"
         }
       ],
       "description": "Use case - Customer gives his name and gets the slot id booked by the vendor of a shop, avoids queuing at shops"
@@ -958,6 +958,12 @@
     {
       "intent": "ChildrenSocializing",
       "examples": [
+        {
+          "text": "Children socializing"
+        },
+        {
+          "text": "While school’s out, can my child hang out with their friends?"
+        },
         {
           "text": "do kids need to limit in person contact?"
         },
@@ -969,12 +975,6 @@
         },
         {
           "text": "While school is out can my child go to sports practice?"
-        },
-        {
-          "text": "Children socializing"
-        },
-        {
-          "text": "While school’s out, can my child hang out with their friends?"
         }
       ],
       "description": "Child Socialization guidance"
@@ -983,13 +983,16 @@
       "intent": "How_many_cases",
       "examples": [
         {
-          "text": "What are the stats on COVID-19?"
+          "text": "How many cases of Covid 19 has been detected?"
         },
         {
           "text": "How many cases of covid 19 have been detected?"
         },
         {
           "text": "What is the stats on Corona Virus?"
+        },
+        {
+          "text": "What are the stats on COVID-19?"
         },
         {
           "text": "How many cases so far?"
@@ -999,9 +1002,6 @@
         },
         {
           "text": "How many cases of corona virus has been detected?"
-        },
-        {
-          "text": "How many cases of Covid 19 has been detected?"
         }
       ],
       "description": "Stats on number of infections"
@@ -1010,7 +1010,7 @@
       "intent": "ChildrenAndFaceMasks",
       "examples": [
         {
-          "text": "does my daughter need to wear a facemask?"
+          "text": "Should children wear masks?"
         },
         {
           "text": "can my child play outside without a mask?"
@@ -1019,7 +1019,7 @@
           "text": "are facemasks recommended for children"
         },
         {
-          "text": "Should children wear masks?"
+          "text": "does my daughter need to wear a facemask?"
         },
         {
           "text": "Children and facemasks"
@@ -1037,10 +1037,10 @@
           "text": "How does it spread"
         },
         {
-          "text": "how did the virus spread from China?"
+          "text": "does the corona virus spread easily?"
         },
         {
-          "text": "does the corona virus spread easily?"
+          "text": "how did the virus spread from China?"
         },
         {
           "text": "is corona virus contagious?"
@@ -1052,19 +1052,19 @@
       "intent": "ReduceFamilyRisk",
       "examples": [
         {
-          "text": "What steps can my family take to reduce our risk of getting COVID-19?"
+          "text": "What should I have my family do to keep from getting sick?"
         },
         {
           "text": "lower my family's risk of getting sick"
-        },
-        {
-          "text": "What should I have my family do to keep from getting sick?"
         },
         {
           "text": "Reduce family risk"
         },
         {
           "text": "what are the top tips to keep my family from catching it?"
+        },
+        {
+          "text": "What steps can my family take to reduce our risk of getting COVID-19?"
         }
       ],
       "description": "Guidance on reducing risk to your family"
@@ -1076,16 +1076,16 @@
           "text": "how do I practice social distancing at work?"
         },
         {
-          "text": "how do I rearrange my workplace for social distance?"
-        },
-        {
-          "text": "How can my workplace practice social distancing?"
+          "text": "any recommendations for workplace social distancing?"
         },
         {
           "text": "how can we adjust the business for social distancing?"
         },
         {
-          "text": "any recommendations for workplace social distancing?"
+          "text": "How can my workplace practice social distancing?"
+        },
+        {
+          "text": "how do I rearrange my workplace for social distance?"
         }
       ],
       "description": "Answer how to implement safe distancing guidelines at work."
@@ -1094,19 +1094,19 @@
       "intent": "Symptoms",
       "examples": [
         {
+          "text": "does covid-19 cause fever?"
+        },
+        {
           "text": "does covid-19 cause coughing?"
         },
         {
           "text": "what symptoms should I watch for?"
         },
         {
-          "text": "Symptoms"
-        },
-        {
           "text": "is fever a sign of this infection?"
         },
         {
-          "text": "does covid-19 cause fever?"
+          "text": "Symptoms"
         },
         {
           "text": "What are the symptoms and complications that COVID-19 can cause?"
@@ -1139,7 +1139,7 @@
       "intent": "DocumentEmployeeIllness",
       "examples": [
         {
-          "text": "can I go back to work without a doctor's note?"
+          "text": "do I need to get a doctor's excuse if I test positive?"
         },
         {
           "text": "can my employer require a doctor's note?"
@@ -1148,7 +1148,7 @@
           "text": "do I need to prove I am covid free to return to work?"
         },
         {
-          "text": "do I need to get a doctor's excuse if I test positive?"
+          "text": "can I go back to work without a doctor's note?"
         },
         {
           "text": "Does an employee need to bring a doctor's note ?"
@@ -1159,21 +1159,6 @@
     {
       "intent": "WhatisCovid",
       "examples": [
-        {
-          "text": "What is Covid"
-        },
-        {
-          "text": "covid 19"
-        },
-        {
-          "text": "What is SARS-CoV-2?"
-        },
-        {
-          "text": "When did  Corona Virus (COVID-19) appear?"
-        },
-        {
-          "text": "Where did  Corona Virus (COVID-19) appear?"
-        },
         {
           "text": "Where was  Corona Virus (COVID-19) first spotted."
         },
@@ -1197,6 +1182,21 @@
         },
         {
           "text": "What is COVID 19?"
+        },
+        {
+          "text": "What is Covid"
+        },
+        {
+          "text": "covid 19"
+        },
+        {
+          "text": "What is SARS-CoV-2?"
+        },
+        {
+          "text": "When did  Corona Virus (COVID-19) appear?"
+        },
+        {
+          "text": "Where did  Corona Virus (COVID-19) appear?"
         }
       ],
       "description": "Description and definition of COVID19"
@@ -1205,7 +1205,7 @@
       "intent": "warmerweather",
       "examples": [
         {
-          "text": "i heard the spread will slow down in warmer months"
+          "text": "Will warm weather stop the outbreak of COVID-19?"
         },
         {
           "text": "does it get less contagious in the summer?"
@@ -1214,10 +1214,10 @@
           "text": "will the virus go away during warmer months?"
         },
         {
-          "text": "Will warm weather stop the outbreak of COVID-19?"
+          "text": "warmer weather"
         },
         {
-          "text": "warmer weather"
+          "text": "i heard the spread will slow down in warmer months"
         }
       ],
       "description": "Does warmer weather or summer weather have an effect on the virus or the pandemic"
@@ -1226,19 +1226,19 @@
       "intent": "InfectedFamilyMember",
       "examples": [
         {
-          "text": "what do i do when someone in my home gets it?"
-        },
-        {
           "text": "my roommate has corona virus what should I do?"
-        },
-        {
-          "text": "do I need to quarantine ill family members?"
         },
         {
           "text": "What should I do if someone in my house gets sick with COVID-19?"
         },
         {
+          "text": "what do i do when someone in my home gets it?"
+        },
+        {
           "text": "Infected family member"
+        },
+        {
+          "text": "do I need to quarantine ill family members?"
         }
       ],
       "description": "Guidance if a Family Member is infected"
@@ -1247,19 +1247,43 @@
       "intent": "Wherediditstart",
       "examples": [
         {
-          "text": "Where did corona virus originate from?"
+          "text": "Where did it start"
         },
         {
           "text": "which location did corona virus start from?"
         },
         {
-          "text": "Where did it start"
+          "text": "What is the source of the virus?"
         },
         {
-          "text": "What is the source of the virus?"
+          "text": "Where did corona virus originate from?"
         }
       ],
       "description": "Handle questions about the origins of the virus in humans"
+    },
+    {
+      "intent": "WhoIsMyDonor",
+      "examples": [
+        {
+          "text": "Who is my good-will donor ?"
+        },
+        {
+          "text": "Who is my good-will donor ? How can i contact them ?"
+        },
+        {
+          "text": "Registered with the helper application. Can you give details of the donor closer to my location ?"
+        },
+        {
+          "text": "Can you give the details of the donor closer to my location ?"
+        },
+        {
+          "text": "@name-Mario"
+        },
+        {
+          "text": "I had registered with the helper application. Who is my good-will donor ?"
+        }
+      ],
+      "description": "Use case - Helper application where recipient gives the name and gets the details of donor closer to the recipient's location"
     },
     {
       "intent": "Whythename",
@@ -1268,10 +1292,7 @@
           "text": "is covid an abbreviation?"
         },
         {
-          "text": "why is covid-19 the name for this disease?"
-        },
-        {
-          "text": "Why is the disease being called coronavirus disease 2019, COVID-19?"
+          "text": "why was covid-19 used to name this disease?"
         },
         {
           "text": "is corona virus the same as covid-19?"
@@ -1280,7 +1301,10 @@
           "text": "Why the name"
         },
         {
-          "text": "why was covid-19 used to name this disease?"
+          "text": "Why is the disease being called coronavirus disease 2019, COVID-19?"
+        },
+        {
+          "text": "why is covid-19 the name for this disease?"
         }
       ],
       "description": "Answer how the name for this virus and disease arose."
@@ -1289,19 +1313,19 @@
       "intent": "Stigmatizedgroups",
       "examples": [
         {
+          "text": "Stigmatized groups"
+        },
+        {
+          "text": "is the pandemic causing discrimination against Chinese people?"
+        },
+        {
           "text": "What causes stereotyping and blame?"
         },
         {
           "text": "Why might someone blame or avoid individuals and groups (create stigma) because of COVID-19?"
         },
         {
-          "text": "Stigmatized groups"
-        },
-        {
           "text": "are Asian people being unfarely blamed for corona virus?"
-        },
-        {
-          "text": "is the pandemic causing discrimination against Chinese people?"
         }
       ],
       "description": "About racial discrimination or shaming"
@@ -1310,19 +1334,19 @@
       "intent": "Symptomsinchildren",
       "examples": [
         {
+          "text": "what are the symptoms in children?"
+        },
+        {
           "text": "Are the symptoms of COVID-19 different in children than in adults?"
+        },
+        {
+          "text": "do children react differently to the virus than adults do?"
         },
         {
           "text": "do kids get different symptoms?"
         },
         {
-          "text": "what are the symptoms in children?"
-        },
-        {
           "text": "Symptoms in children"
-        },
-        {
-          "text": "do children react differently to the virus than adults do?"
         }
       ],
       "description": "Signs and symptoms in children and differences from adults"
@@ -1352,16 +1376,16 @@
       "intent": "ReportingToWork",
       "examples": [
         {
-          "text": "Should I go to work if there is an outbreak in my community?"
+          "text": "will my office be closed?"
         },
         {
           "text": "I'm supposed to work but my child's school is canceled"
         },
         {
-          "text": "will my office be closed?"
+          "text": "what are my work from home options?"
         },
         {
-          "text": "what are my work from home options?"
+          "text": "Should I go to work if there is an outbreak in my community?"
         },
         {
           "text": "Reporting to work"
@@ -1373,19 +1397,19 @@
       "intent": "PreparingChildren",
       "examples": [
         {
-          "text": "How do I prepare my children in case of COVID-19 outbreak in our community?"
+          "text": "how do I keep my kids from worrying about the virus?"
         },
         {
           "text": "what should I tell my child about this pandemic?"
         },
         {
-          "text": "how do I keep my kids from worrying about the virus?"
-        },
-        {
-          "text": "Preparing children"
+          "text": "How do I prepare my children in case of COVID-19 outbreak in our community?"
         },
         {
           "text": "My child is stressed about the crisis how can I help?"
+        },
+        {
+          "text": "Preparing children"
         }
       ],
       "description": "Guidance for calming and protecting children"
@@ -1393,9 +1417,6 @@
     {
       "intent": "HealthDeptRecommendedActions",
       "examples": [
-        {
-          "text": "What should healthcare professionals and health departments do?"
-        },
         {
           "text": "does CDC provide protocols for labs to test covid-19?"
         },
@@ -1410,6 +1431,9 @@
         },
         {
           "text": "can CDC help my local health dept get protective gear?"
+        },
+        {
+          "text": "What should healthcare professionals and health departments do?"
         }
       ],
       "description": "Recommended actions by from the Health Dept"
@@ -1418,28 +1442,28 @@
       "intent": "PersonToPerson",
       "examples": [
         {
-          "text": "Can  Corona Virus (COVID-19) spread from person-to-person?"
+          "text": "Why is it so contagious?"
         },
         {
-          "text": "Can I catch it from my friend?"
+          "text": "How does  Corona Virus (COVID-19) spread?"
         },
         {
           "text": "Can someone who has had COVID-19 spread the illness to others?"
         },
         {
-          "text": "How does  Corona Virus (COVID-19) spread?"
+          "text": "Can I catch it from my friend?"
+        },
+        {
+          "text": "Can  Corona Virus (COVID-19) spread from person-to-person?"
+        },
+        {
+          "text": "Why is  Corona Virus (COVID-19) spreading between people?"
         },
         {
           "text": "person to person"
         },
         {
           "text": "Who can I get it from?"
-        },
-        {
-          "text": "Why is it so contagious?"
-        },
-        {
-          "text": "Why is  Corona Virus (COVID-19) spreading between people?"
         }
       ],
       "description": "Info on how Coronavirus spreads person to person"
@@ -1448,19 +1472,19 @@
       "intent": "EmployeeShowsSymptoms",
       "examples": [
         {
+          "text": "how do I disinfect if a sick person showed up at work?"
+        },
+        {
+          "text": "what if someone i work with is sick?"
+        },
+        {
           "text": "do I need to quarantine the area where a sick person worked?"
         },
         {
           "text": "if an employee seems like they might have covid"
         },
         {
-          "text": "how do I disinfect if a sick person showed up at work?"
-        },
-        {
           "text": "What should I do if an employee shows symptoms of Covid-19?"
-        },
-        {
-          "text": "what if someone i work with is sick?"
         }
       ],
       "description": "Answer what to do when an employee shows symptoms of Covid-19."
@@ -1472,13 +1496,13 @@
           "text": "is handwashing important for children?"
         },
         {
-          "text": "Protecting children"
+          "text": "what will protect my kids from getting the infection?"
         },
         {
           "text": "should I disinfect my kid's toys?"
         },
         {
-          "text": "what will protect my kids from getting the infection?"
+          "text": "Protecting children"
         },
         {
           "text": "How can I protect my child from COVID-19 infection?"
@@ -1668,7 +1692,7 @@
   },
   "webhooks": [
     {
-      "url": "https://eu-gb.functions.cloud.ibm.com/api/v1/web/divyas01.msec%40gmail.com_dev/default/discovery-covid-async.json",
+      "url": "https://eu-gb.functions.appdomain.cloud/api/v1/web/divyas01.msec%40gmail.com_dev/default/discovery-covid-new.json",
       "name": "main_webhook",
       "headers": []
     }
@@ -1839,6 +1863,40 @@
       "parent": "node_4_1585096079466",
       "conditions": "$location_stats",
       "dialog_node": "response_9_1585096897994"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "No matching data found"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1595097256335",
+      "conditions": "anything_else",
+      "dialog_node": "response_8_1595097316026",
+      "previous_sibling": "response_5_1595097312148"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$webhook_result_4"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1595097256335",
+      "conditions": "$webhook_result_4",
+      "dialog_node": "response_5_1595097312148"
     },
     {
       "type": "response_condition",
@@ -2185,19 +2243,25 @@
     },
     {
       "type": "standard",
-      "title": "#Set confidence thresholds",
-      "output": {},
-      "context": {
-        "out_of_bounds": 0.2,
-        "low_confidence": 0.45
+      "title": "#WhoIsMyDonor",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "recipient_name": "Mario"
+          },
+          "result_variable": "webhook_result_4"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
       },
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "condition",
-        "dialog_node": "node_11789"
-      },
-      "conditions": "conversation_start",
-      "dialog_node": "node_11788",
+      "conditions": "(#WhoIsMyDonor && intents[0].confidence > $low_confidence)",
+      "user_label": "Helper application",
+      "dialog_node": "node_5_1595097256335",
       "previous_sibling": "node_8_1593867045888"
     },
     {
@@ -2538,6 +2602,23 @@
       "conditions": "(#StayingSafeAtWork && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11794",
       "previous_sibling": "node_11793"
+    },
+    {
+      "type": "standard",
+      "title": "#Set confidence thresholds",
+      "output": {},
+      "context": {
+        "out_of_bounds": 0.2,
+        "low_confidence": 0.45
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_11789"
+      },
+      "conditions": "conversation_start",
+      "dialog_node": "node_11788",
+      "previous_sibling": "node_5_1595097256335"
     },
     {
       "type": "standard",
