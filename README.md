@@ -37,3 +37,30 @@ before launching the dashboard and order details view.
 1. Preview the assistant by launching it and type the sample question assuming Alex has logged on in the chat-window - "What is the slot booked with the vendor ?". This would invoke the web-hook and issue REST call externally to get the vendor slot id which is linked to Alex. 
 
 Previous to this, it is expected that the vendor has registered the stock and inventory details and customer (Alex) registers in the app and books a slot for the necessary inventory. A slot id from the vendor is associated to Alex ensuring no two customers get the same slot id when slot booking is done.
+
+
+
+** Demo recording of use case 1 
+
+Demo recording video link - https://www.youtube.com/watch?v=PdwA0tA-LeI&feature=youtu.be
+
+
+Use Case 2 - Effective help giver
+
+** Steps to run the project
+
+1. Install angular cli 10 and NPM in the enviroment. Create two angular projects called helper-application and receiver-application using ng new helper-application, ng new receiver-application
+2. Copy the src/app folder and src/assets/img from the github link - https://github.com/DivyaSundar-89/CFC_2020_SlotBooking/tree/master/helper_application/src and paste it in the newly created angular project for helper-application.
+3. Copy the src/app folder and src/assets/img from the github link - https://github.com/DivyaSundar-89/CFC_2020_SlotBooking/tree/master/recipient_application/src and paste it in the newly created angular project for receiever-application.
+4. In both angular projects, make sure to have only the following lines of code in src/index.html to load the UI properly
+<my-app>loading</my-app>
+
+5. Launch both the ngular projects using ng serve. 
+6. Use the Nodejs discovery action discvery-covid-new (link - https://github.com/DivyaSundar-89/CFC_2020_SlotBooking/blob/master/discovery-covid-new.js) as a discovery action running as a webhook for the chatbot assistant.
+7. Link the dialog skill (link - https://github.com/DivyaSundar-89/CFC_2020_SlotBooking/blob/master/skill-CDC-COVID-FAQ.json ) with the chat bot assistant.
+8. Pass a parameter name in the chat-bot assistant, key - recipient_name and value is the name of the receiver.
+9. Register the donor and receiver and use the watson chatbot assistant to get the necessary details.
+
+** Demo recording of use case 2
+
+Demo recording video link - https://www.youtube.com/watch?v=sCK1K-pKS7Q
