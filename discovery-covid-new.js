@@ -27,6 +27,8 @@ async function main(params) {
     var donorTime = {};
     var category = {};
     var recipientName = {};
+    var slotNumber = {};
+    
     await db.list({include_docs:true}, function(err, body){
         body.rows.forEach(function(row){
             var doc  = row.doc;
@@ -39,6 +41,7 @@ async function main(params) {
             donorNotes[0] = doc.donorNotes;
             donorTime[0] = doc.donorTime;
             category[0] = doc.category;
+            slotNumber[0] = doc.slotNumber;
             }
         });
         
@@ -59,7 +62,8 @@ async function main(params) {
       let donor_notes = donorNotes[0];
       let donor_time = donorTime[0];
       let donor_category = category[0];
-      
+      let slot_Number = slotNumber[0];
+
         return {
           result: `Hello ${recipient_Name}. You had registered for the category - ${donor_category}. The details of your good-will giver who has agreed to share with you are: 
                    Name - ${donor_name}
@@ -68,8 +72,10 @@ async function main(params) {
                    phone - ${donor_phone}
                    Availability - ${donor_time}
                    The giver has left a note for you - ${donor_notes}
+                   Your slot booked with the donor is - ${slot_Number}
                    You can contact the giver and collect your essentials.`
         };
-  
+        
+     
      
 }
