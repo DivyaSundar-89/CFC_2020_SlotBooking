@@ -45,22 +45,42 @@ Previous to this, it is expected that the vendor has registered the stock and in
 Demo recording video link - https://www.youtube.com/watch?v=PdwA0tA-LeI&feature=youtu.be
 
 
-Use Case 2 - Effective help giver
-
-** Steps to run the project
-
-1. Install angular cli 10 and NPM in the enviroment. Create two angular projects called helper-application and receiver-application using ng new helper-application, ng new receiver-application
-2. Copy the src/app folder and src/assets/img from the github link - https://github.com/DivyaSundar-89/CFC_2020_SlotBooking/tree/master/helper_application/src and paste it in the newly created angular project for helper-application.
-3. Copy the src/app folder and src/assets/img from the github link - https://github.com/DivyaSundar-89/CFC_2020_SlotBooking/tree/master/recipient_application/src and paste it in the newly created angular project for receiever-application.
-4. In both angular projects, make sure to have only the following lines of code in src/index.html to load the UI properly
+** Steps to run the project (locally)
+1.	Install angular cli 10 and NPM in the enviroment. Create two angular projects called helper-application and receiver-application using ng new helper-application, ng new receiver-application
+2.	Copy the src/app folder and src/assets/img from the github link - https://github.com/DivyaSundar-89/CFC_2020_SlotBooking/tree/master/helper_application/src  and paste it in the newly created angular project for helper-application.
+3.	Copy the src/app folder and src/assets/img from the github link - https://github.com/DivyaSundar-89/CFC_2020_SlotBooking/tree/master/recipient_application/src  and paste it in the newly created angular project for receiever-application.
+4.	In both angular projects, make sure to have only the following lines of code in src/index.html to load the UI properly
 <my-app>loading</my-app>
 
-5. Launch both the ngular projects using ng serve. 
-6. Use the Nodejs discovery action discvery-covid-new (link - https://github.com/DivyaSundar-89/CFC_2020_SlotBooking/blob/master/discovery-covid-new.js) as a discovery action running as a webhook for the chatbot assistant.
-7. Link the dialog skill (link - https://github.com/DivyaSundar-89/CFC_2020_SlotBooking/blob/master/skill-CDC-COVID-FAQ.json ) with the chat bot assistant.
-8. Pass a parameter name in the chat-bot assistant, key - recipient_name and value is the name of the receiver.
-9. Register the donor and receiver and use the watson chatbot assistant to get the necessary details.
+5.	Launch both the ngular projects using ng serve
+6.	Use the Nodejs discovery action discvery-covid-new (link - https://github.com/DivyaSundar-89/CFC_2020_SlotBooking/blob/master/discovery-covid-new.js ) as a discovery action running as a webhook for the chatbot assistant.
+7.	Link the dialog skill (link - https://github.com/DivyaSundar-89/CFC_2020_SlotBooking/blob/master/skill-CDC-COVID-FAQ.json  ) with the chat bot assistant.
+8.	Pass a parameter name in the chat-bot assistant, key - recipient_name and value is the name of the receiver.
+9.	Register the donor and receiver in the UI and use the watson chatbot assistant to get the necessary details.
+
+** Steps to run the project (hosted in IBM cloud services)
+1.	Access the donor and receiver UI applications hosted as the IBM cloud foundry applications.
+http://helper-app.eu-gb.cf.appdomain.cloud  – Helper donor registration
+http://recipient-app.eu-gb.cf.appdomain.cloud/ - Helper receiver registration
+
+2.	Install docker locally to access the backend micro-service hosted in the IBM cloud registry service.
+Steps to install docker engine, docker ce and docker compose can be found at https://docs.docker.com/get-docker/
+
+3.	Use docker pull to pull the image hosted in the IBM cloud registry service. The following command pulls the image with the latest tag from the repository us.icr.io
+docker pull us.icr.io/divyasundar/cfc2020:cfc-spring-boot-docker
+The namespace created in the registry service is divyasundar and the repository tag is cfc2020.
+
+4.	Install the IBM cloud service/cf cli utility to connect with the central hub where docker images are pushed in IBM repositories. Ibmcloud command line utility offers a wide variety of docker commands and cf push commands.
+
+5.	Use the Nodejs discovery action discvery-covid-new (link - https://github.com/DivyaSundar-89/CFC_2020_SlotBooking/blob/master/discovery-covid-new.js  ) as a discovery action running as a webhook for the chatbot assistant to get the receiver details.
+
+6.	Use the Nodejs discovery action discovery-covid-donor (link - https://github.com/DivyaSundar-89/CFC_2020_SlotBooking/blob/master/discovery-covid-donor.js ) as as a discovery action running as a webhook for the chatbot assistant to get the details of the receiver slots and receiver names given a donor.
+
+7.	Link the dialog skill (link - https://github.com/DivyaSundar-89/CFC_2020_SlotBooking/blob/master/skill-CDC-COVID-FAQ.json   ) with the chat bot assistant.
+
+8.	Pass a parameter name in the chat-bot assistant, key - recipient_name and value is the name of the receiver.
+9.	Register the donor and receiver in the UI and use the watson chatbot assistant to get the necessary details.
+10.	Use the webhook function of discovery-covid-donor to get the details of the receiver slot id and the receiver names given a donor queries through the chatbot assistant.
 
 ** Demo recording of use case 2
-
-Demo recording video link - https://www.youtube.com/watch?v=sCK1K-pKS7Q
+              Demo recording video link - https://www.youtube.com/watch?v=sCK1K-pKS7Q 
